@@ -1,11 +1,20 @@
-A photo booth application
+# Real-Time Video Capture and Snapshot
 
-The code captures and show the video stream from your webcam (or camera).
-It prints out the width and height of the video capture. (Using cap.get())
+This Python program captures real-time video from the device's camera using OpenCV and allows users to take snapshots by pressing the 'x' key. The captured frames are displayed, and snapshots are saved with an automatically incremented filename. 
 
-Code has functions to:
- Take a snapshot whenever the ‘x’ key is pressed.
- Crop 30 pixels around the snapshot image.
- Then pad it with a constant border 50 pixels wide.
- Save the snapshot. Use image names such as ‘image1.jpg’, ‘image2.jpg’, etc.,
-automatically incrementing the filename counter.
+## Features
+
+- Real-time video capture from the device's camera.
+- Press 'x' to take a snapshot.
+- Snapshots are saved with an automatically incremented filename.
+- The snapshot is cropped by removing 30 pixels from each side.
+- A constant border, 50 pixels wide, is added to the snapshot.
+- Snapshots are saved as 'imageX.jpg', where X is an automatically incremented counter.
+- Display the captured video and snapshots.
+- Press 'q' or 'ESC' to exit the video capture.
+
+## Usage
+
+1. Install the required libraries:
+   ```bash
+   pip install opencv-python
